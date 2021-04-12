@@ -123,21 +123,29 @@ height: 100vh;
 }
 .banner-form .sub-btn{
     padding: 18px;
-    width: 100%;
+    width: 100%; 
     border: none;
     color: white;
     background: #ff9b51;
 
 
 }
-.col-md-1{
-/*	margin-left: 12px;*/ 
+.banner .col-md-1{
+
+    width: 6.333333%; 
 }
 .col-md-4{}
 	/*margin-left: 58px;
 }*/
+.txt{
+	width: 38.666667%;
+}
 
-
+.image{
+	display: flex;
+	align-items: center;
+	margin-left: 60px;
+}
 /****************
  soical media section
 ********************/
@@ -279,11 +287,7 @@ margin-bottom: 18px;
 	font-family: 'Open Sans', sans-serif;
 	border-radius: 3px;
 }
-.image{
-	display: flex;
-	align-items: center;
 
-}
 /****************
  list section
 ********************/
