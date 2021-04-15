@@ -31,7 +31,7 @@ background: url(../img/banner-bg.png);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
-height: 100vh;
+height: auto;
 }
 .banner-text,.banner-form{
 	height: 96vh;
@@ -141,11 +141,7 @@ height: 100vh;
 	width: 38.666667%;
 }
 
-.image{
-	display: flex;
-	align-items: center;
-	margin-left: 60px;
-}
+
 /****************
  soical media section
 ********************/
@@ -218,18 +214,18 @@ margin-bottom: 8px;
 }
 .features-text{
 
-    margin-left: 25px;
+  /*  margin-left: 25px;*/
 }
 
 .features-tab .tab{
 	list-style: none;
     background: #333333;
     margin-bottom: 1px;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
      font-family: 'Open Sans', sans-serif;
     text-align: center;
-    line-height: 110px;
+    line-height: 120px;
     text-transform: uppercase;
     color: white;
     font-weight: 600;
@@ -239,7 +235,15 @@ margin-bottom: 8px;
 .features-tab {
 	padding: 0;
 }
+.fast{
+	width: 4.333333%;
+}
+.image{
+	display: flex;
+	align-items: center;
+  margin-left: 91px;
 
+}
 .features-tab .tab:first-child{
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -274,7 +278,7 @@ font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #a9aaac;
 font-weight: 300;
-width: 88%;
+width: 116%;
 margin-bottom: 18px;
 }
 .features-text button{
@@ -303,16 +307,16 @@ margin-bottom: 18px;
 	/* margin-top: 12px;*/
 }
 .list-text{
-	/*align-items: right !important;*/
+	padding-left: 70px;
 }
 .list-text p{
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #a9aaac;
 font-weight: 300;
-width: 73%;
-/*margin-bottom: 18px;	
-*/
+width: 95%;
+margin-bottom: 30px;	
+
 }
 .line1{
 	width: 65px;
@@ -345,16 +349,16 @@ font-size: 14px;
 font-weight: 600;
 }
 .p-text p{
-	width: 100%;
+	width: 114%;
 }
 .col-md-2 {
-	width: 12.666667% !important;
+	width:13.666667% !important;
 }
 /****************
  picture section
 ********************/
 .picture{
-/*	width: 100%;*/
+	width: 100%;
 	padding: 100px 0;
 	background:#f5f5f5;
 }
@@ -373,7 +377,7 @@ font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 color: #a9aaac;
 font-weight: 300;
-width: 83.4%;
+width: 90.4%;
 }
 .pic-line{
 width: 67px;
@@ -387,15 +391,15 @@ width: 67px;
 ********************/
 .awesome{
 	width: 100%;
-	padding: 110px 0;
+	padding: 120px 0;
 	background: white;
 	text-align: center;	
 }
  .awesome-text h1{
  	font-family: 'Raleway', sans-serif;
  	font-size: 36px;
- 	font-weight: 400px;
- 	color:#4b4b4b;
+     font-weight: 400;
+ 	color:#212121;
  	text-transform: uppercase;
  }
  .awesome-text p{
@@ -446,4 +450,321 @@ margin-top: 50px;
  font-weight:300;
  color: #a9aaac;
      width: 100%;
+}
+
+/****************
+
+ price section
+********************/
+.price{
+	width: 100%;
+	padding: 110px 0;
+	text-align: center;
+	background:#f5f5f5;
+}
+.price-text h1{
+	font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+   font-weight: 400;
+    color: #212121;
+    text-transform: uppercase;
+}
+.price-text p{
+	    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 350;
+    color: #a9aaac;
+}
+.table-1{
+
+}
+.table-1 .t-header{
+	border-bottom: 1px solid white;
+    background: #333333;
+    text-align: center;
+    padding: 20px 0;
+}
+.table-1 .t-header h6{
+	 font-family: 'Open Sans', sans-serif;
+ color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.table-1  .t-body{
+background: #333333;
+ border-bottom: 5px solid #ff8b38;
+    padding: 30px 0;
+}
+.table-1  .t-body h1{
+ color:white;
+ font-size:94px;
+ font-weight:bold;
+ font-family: 'Raleway', sans-serif;
+}
+.table-1  .t-body h1 span{
+	font-size: 32px;
+}
+.t-body .t-body-text {
+ color: #999999;
+ font-style: italic;
+ font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+.t-footer{
+ background-color: white;
+}
+.t-footer ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.t-footer ul li{
+	border-bottom: 1px solid #f5f5f5;
+	padding: 12px 0px;
+	text-transform: uppercase;
+	color: #86878b;
+	 font-family: 'Open Sans', sans-serif;
+	 font-size: 14px;
+}
+/*.t-footer ul li:nth-child(){}*/
+.t-footer ul li:last-child{
+	border-bottom: none;
+}
+.price-table{
+	margin-top: 60px;
+	    align-items: flex-end;
+}
+.middle .t-body{
+	border-bottom: 0;
+}
+.t-body-xtra{
+	background-color: #ff8b38;
+}
+.t-body-xtra p{
+	margin: 0;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 8px 0;
+	 font-family: 'Open Sans', sans-serif;
+	 text-transform: uppercase;
+	}
+
+
+/****************
+ testimonial section
+********************/
+
+.testimonial{
+	width: 100%;
+	background-color: white;
+	padding: 110px 0;
+}
+.testimonial .testimonial1{
+	text-align: center;
+}
+.message{
+	background-color: #f5f5f5;
+	    padding:20px 29px 10px 27px;
+	position: relative;
+}
+.message p{
+ color: #86878b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+.msg-icon{
+	width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    transform: rotate(45deg);
+    bottom: -7px;
+    position: absolute;
+    left: 26px;
+}
+.user-detials{
+	margin-top: 30px;
+}
+.user-detials .col-md-4{
+	text-align: right;
+}
+.comment{
+/*	padding: 0;*/
+}
+.cmnt{
+	    margin: 0px 40px;
+}
+.testimonial .test{
+padding: 0;
+width: 26%;
+}
+.user-detials-text{
+    margin-top: 10px;
+}
+.user-detials-text h5{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+
+}
+.user-detials-text p{
+font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+ font-weight: 300;
+ color: #a4a5a8;
+ margin: 0;
+ padding: 0;
+}
+/****************
+ design section
+********************/
+
+.design{
+	width: 100%;
+	padding: 60px 0px;
+	background: url(../img/design-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50vh;
+}
+.design-text{
+ 	text-align: center;
+}
+.design-text h1{
+color: white;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.design-line{
+width: 67px;
+    height: 2px;
+    background: white;
+    margin: 28px auto;
+}
+
+.design-text p{
+color:#a3a09a;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+}
+.design-btn{
+	text-align: center;
+	margin: 31px 0;
+}
+.design-btn button{
+	padding: 10px 30px;
+    color: #f5f5f5;
+    background: transparent;
+    border: none;
+    border: 2px solid #f5f5f5;
+    font-weight: 600;
+}
+/****************
+ contact section
+********************/
+.contact{
+	width: 100%;
+	background-color: white;
+	padding: 80px 0;
+	text-align: center;
+}
+
+form{
+/*	margin-top: 20px;*/
+}
+.form-text{
+	margin-top: 70px;
+}
+form input{
+	display: block;
+    width: 100%;
+        padding: 10px;
+    margin-bottom: 27px;
+ 	font-family: 'Open Sans', sans-serif;    
+
+	}
+.form-txt{
+	border: none;
+ outline: none;
+    border-bottom: 1px solid #d6d6d6;
+     margin-left: 12px;
+}	
+.text-area .form-txt::placeholder{
+ color: #d6d6d6;
+ font-size: 14px;
+ margin-left: 12px;
+ font-family: 'Open Sans', sans-serif;
+}
+.text-area{
+padding-top: 12px;
+   /* width: 97%;*/
+    display: block;
+}
+.text-area textarea{
+	    height: auto;
+	        width: 83%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+}
+.Contact-btn{
+    text-align: center;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+.Contact-btn button{
+	padding: 14px 24px;
+    color: #f5f5f5;
+    background: #ff9b51;
+    border: none;
+    border: 2px solid #f5f5f5;
+    font-weight: 600;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     font-weight: 600;
+     border-radius: 5px;
+}
+/****************
+ footer section
+********************/
+.footer{
+width: 100%;
+background: black;
+padding: 30px 0;
+text-align: center;
+}
+.footer-icon{
+
+}
+.footer-icon ul li{
+ list-style: none;
+ display: inline-block;
+  margin-top: 38px;
+}
+.footer-icon ul li a {
+      padding: 10px 10px;
+}
+.footer-icon ul li a i{
+ font-size: 24px;
+    color: #cccccc;
+    text-align: center;
+}
+
+.footer-text p{
+	color: #808080;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+.footer-text p a i{
+	font-size: 12px;
+    color: #808080;
 }
