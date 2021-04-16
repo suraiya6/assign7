@@ -15,8 +15,8 @@ header{
 .sticky{
 	width: 100%;
 	position: fixed;
-	/*z-index: 99999;
-}*/
+	z-index: 99999;
+
 }
 .nav-link{
 	color: #cccccc !important;
