@@ -16,7 +16,6 @@ header{
 	width: 100%;
 	position: fixed;
 	z-index: 99999;
-
 }
 .nav-link{
 	color: #cccccc !important;
@@ -116,7 +115,7 @@ height: auto;
 }
 .banner-form .card{
  width: 350px;
-
+   
 }
 .last{
 	margin-bottom:14px !important;
