@@ -155,31 +155,43 @@
           <div class="col-md-2">
             <!-- <div class="features-tab"> -->
               <ul class="features-tab">
-                <li class="tab current">Tab1</li>
-                <li class="tab">Tab2</li>
-                <li class="tab">Tab3</li>
+                <li class="tab t-1">Tab1</li>
+                <li class="tab t-2">Tab2</li>
+                <li class="tab t-3">Tab3</li>
               </ul>
             </div>
           <div class="col-md-1 fast"></div>
           <div class="col-md-5 txt">
-            <div class="features-text">
-              <h2>Tabs with soft transitioning effect.</h2>
-              <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-              <p>
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                bibendum laoreet.</p>
-
-            <button class="features-btn">Download</button>
+            <div class="features-text tab-c-1">
+              <h2>Tabs with soft transitioning effect. and content number One...11111 </h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Aenean euismod 
+                  bibendum laoreet.</p>
+                <button class="features-btn">Download</button>
             </div>
-          </div>
+            <div class="features-text tab-c-2">
+              <h2>Tabs with soft transitioning effect. and content number two...22222</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                  bibendum laoreet.</p>
+                   <button class="features-btn">Download</button>
+            </div>
+            <div class="features-text  tab-c-3">
+              <h2>Tabs with soft transitioning effect. and content number three...333333</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                  bibendum laoreet.</p>
+                  <button class="features-btn">Download</button>
+            </div>
+            </div>
           <div class="col-md-4 image">
             <div class="features-img">
               <img src="img/features-img.png "class="img-fluid">
             </div>
           </div>
-        </div>
+      
       </div>
+    </div>
     </section>  
 
       <!-- features end here -->
@@ -615,7 +627,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     
-  
+    <!-- jQuery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
     <script type="">
@@ -623,9 +636,52 @@
        window.addEventListener('scroll', function(){
        var header = document.querySelector('header');
         header.classList.toggle('sticky',window.scrollY>0);
-      })
+      });
+      // jquery
+        $(document).ready(function(){
+          $('.tab-c-2').hide();
+          $('.tab-c-3').hide();
+          $('.t-1').addClass('current');
 
 
+         //tab1
+         $('.t-1').on('click' ,function(){
+          $('.tab-c-1').show();
+          $('.tab-c-2').hide();
+          $('.tab-c-3').hide();
+
+          //color
+             $('.t-1').addClass('current');
+              $('.t-2').removeClass('current');
+               $('.t-3').removeClass('current');
+         });
+
+         //tab2
+           $('.t-2').on('click' ,function(){
+            $('.tab-c-1').hide();
+            $('.tab-c-2').show();
+            $('.tab-c-3').hide();
+
+
+            //color
+             $('.t-1').removeClass('current');
+              $('.t-2').addClass('current');
+               $('.t-3').removeClass('current');
+           });
+
+            //tab3
+           $('.t-3').on('click' ,function(){
+            $('.tab-c-1').hide();
+            $('.tab-c-2').hide();
+            $('.tab-c-3').show();
+
+            //color
+             $('.t-1').removeClass('current');
+              $('.t-2').removeClass('current');
+               $('.t-3').addClass('current');
+           });
+
+          });
     </script>
 
     
